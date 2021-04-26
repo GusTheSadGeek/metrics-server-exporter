@@ -161,7 +161,7 @@ func (s *Scraper) MetricsServer(ctx context.Context) error {
 						metadata.GetNamespace(),
 						metadata.GetName(),
 						metrics.Memory,
-						float64(container.Usage.Memory().MilliValue()),
+						float64(container.Usage.Memory().Value()),
 					)
 				}
 			}
